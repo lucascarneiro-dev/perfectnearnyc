@@ -1,16 +1,99 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" type="text/css"
-          href="style.css"/>
-</head>
 
-<body>
+.div{
+    background-color: rgba(207, 68, 43, 0.589);
+}
 
-<h1>Generated from: http://www.cufonfonts.com</h1><br/>
-<h1 style="font-family:'Sifonn Pro';font-weight:normal;font-size:42px">AaBbCcDdEeFfGgHhŞşIıİi Example</h1>
+.header{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    position: fixed;
+    z-index: 2;
+}
+
+#logo{
+    max-width: 250px;
+    width: 50%;
+    min-width: 100px;
+    margin-left: 90px;
+    position: fixed;
+}
+
+#home{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    margin: 0;
+    display: grid;
+}
+
+#videobg{
+    width: 100%;
+    margin: 0 auto;
+    z-index: -1;
+    grid-column: 1/6;
+    grid-row: 1/4
+}
+
+#arrival-box {
+    grid-column: 3/3;
+    grid-row: 2/3;
+    width: 500px;
+    height: 180px;
+    background-color: #060644;
+    position: flex;
+    border-radius: 20px;
+}
+
+h2.arrival{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 0;
+    font-size: 200%;
+}
+
+#navbar{
+    margin-top: 50px;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+.navitens{
+    display: flex;
+    justify-content: right;
+    background-color: #fbad18;
+    height: 80px;
+    padding-left: 30%;
+}
+
+.naviten{
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Sifonn Pro';
+    font-size: 130%;
+    text-decoration: none;
+    color: #060644;
+}
+
+@font-face {
+    font-family: 'Sifonn Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sifonn Pro'), url('/style/SIFONN_PRO.woff') format('woff');
+    }
 
 
-</body>
-</html>
+
+
+#accommodations{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: auto;
+    display: grid;
+}
