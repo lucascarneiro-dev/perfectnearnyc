@@ -84,7 +84,7 @@ h2.arrival{
     font-family: 'Sifonn Pro';
     font-style: normal;
     font-weight: normal;
-    src: local('Sifonn Pro'), url('/style/SIFONN_PRO.woff') format('woff');
+    src: local('Sifonn Pro'), url('style/SIFONN_PRO.woff') format('woff');
     }
 
 
