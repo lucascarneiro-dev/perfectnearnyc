@@ -119,11 +119,17 @@ body, ul{
 
 @media (max-width: 600px){
     #btn-mobile{
-        display: block;   
+        display: block; 
+        grid-column: 5;  
+        grid-row: 2;
     }
     #logo{
         max-width: 70vw;
-        display: none;
+    }
+    #menu{
+        /* display: none; */
+        width: 100%;
+        position:absolute;
     }
     #videobg{
         display: none;
