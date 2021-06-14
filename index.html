@@ -5,28 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="scrip" href="style/script.js">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet"> 
     <title>Perfect Near NYC</title>
 </head>
 <body style="margin: 0px;">
     <div>
-        <header id="header" style="background-color: aqua;">
-            <div>
-                <nav id="navbar"> 
-                    <div class="navitens">
-                        <a href="#home" class="naviten">Home</a>
-                        <a href="#accommodations" class="naviten">Accommodations</a>
-                        <a href="#policies" class="naviten">Rules and Policies</a>
-                        <a href="#contact" class="naviten">Contact Us dropdown</a>
-                    </div>
-                        
-                </nav>
-                
-            </div>
-            
+        <header id="header">
+            <img id="logo" src="img/logo.png" alt="logo" title="Logo">
+            <nav id="nav"> 
+                <button id="btn-mobile">Menu</button>
+                <ul id="menu">
+                        <li><a href="#home" class="naviten">Home</a></li>
+                        <li><a href="#accommodations" class="naviten">Accommodations</a></li>
+                        <li><a href="#policies" class="naviten">Rules and Policies</a></li>
+                        <li><a href="#contact" class="naviten">Contact Us</a></li>
+                </ul>
+            </nav>
         </header>
-        <img id="logo" src="img/logo.png" alt="logo" title="Logo">
     </div>
     
     <div id="home">
@@ -34,6 +31,8 @@
             <h2 class='arrival'>Perfect near NYC</h2>
         </div>
         <video autoplay muted loop id="videobg"><source src="video/homebg.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop id="videobgmobile"><source src="video/homebgmobile.mp4" type="video/mp4">
         </video>
     </div>
 
