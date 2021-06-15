@@ -9,7 +9,7 @@ function toggleMenu() {
 
   function toggleLogo() {
     var x = document.getElementById("logomob");
-    if (x.style.opacity === "1") {
+    if (x.style.opacity === 1) {
       x.style.opacity = "0";
     } else {
       x.style.opacity = "1";
