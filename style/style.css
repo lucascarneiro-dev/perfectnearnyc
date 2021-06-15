@@ -46,7 +46,6 @@ nav{
     max-width: 100%;
     grid-column: 2/2;
     z-index: 3;
-    display: none;
 }
 #logomob{
     display: none;
@@ -113,7 +112,7 @@ body, ul{
 /* MOBILE */
 
 
-#videobgmobile{
+#videobgmob{
     display: none;
 }
 
@@ -121,10 +120,11 @@ body, ul{
     #logo{
         display:none;
     }
-    #logo-mob{
-        display: block;
+    #logomob{
+        display: flex;
         max-width: 70vw;
         opacity: 1;
+        z-index: 3;
     }
     
     nav{
@@ -148,7 +148,7 @@ body, ul{
         display: none;
     }
 
-    #menu-mobile{
+    #menumob{
         display: none;
         flex-direction: column;
         list-style: none;
@@ -206,7 +206,7 @@ body, ul{
         top: 60px;
     }
 
-    #checkbox-menu:checked + label span:nth-child(1){
+    /* #checkbox-menu:checked + label span:nth-child(1){
         transform: rotate(-45deg);
         top: 30px;
     }
@@ -216,7 +216,7 @@ body, ul{
     #checkbox-menu:checked + label span:nth-child(3){
         transform: rotate(+45deg);
         top: 30px;
-    }
+    } */
 
     #videobg{
         display: none;

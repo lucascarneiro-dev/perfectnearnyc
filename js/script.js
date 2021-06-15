@@ -1,17 +1,20 @@
 function toggleMenu() {
-    var x = document.getElementById("menumob");
-    if (x.style.display === "none") {
-      x.style.display = "block";
+    var menumob = document.getElementById("menumob");
+    var toggleButton = false
+    if (menumob.style.display === "none") {
+      var toggleButton = true
+      menumob.style.display = "block";
     } else {
-      x.style.display = "none";
+      var toggleButton = true
+      menumob.style.display = "none";
     }
   } 
 
   function toggleLogo() {
-    var x = document.getElementById("logomob");
-    if (x.style.opacity === 1) {
-      x.style.opacity = "0";
+    var logomob = document.getElementById("logomob");
+    if (logomob.style.opacity === 1) {
+      logomob.style.opacity = 0;
     } else {
-      x.style.opacity = "1";
+      logomob.style.opacity = 1;
     }
   } 
