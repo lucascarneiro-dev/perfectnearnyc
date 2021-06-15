@@ -24,6 +24,9 @@ nav{
     grid-column: 3/6;
     grid-row: 2/2;
 }
+#menumob{
+    display: none;
+}
 
 .naviten{
     margin: auto;
@@ -39,9 +42,14 @@ nav{
 }
 
 #logo{
+    display: flex;
     max-width: 100%;
     grid-column: 2/2;
     z-index: 3;
+    display: none;
+}
+#logomob{
+    display: none;
 }
 
 #home{
@@ -111,8 +119,12 @@ body, ul{
 
 @media (max-width: 700px){
     #logo{
-        display: none;
+        display:none;
+    }
+    #logo-mob{
+        display: block;
         max-width: 70vw;
+        opacity: 1;
     }
     
     nav{
@@ -133,6 +145,11 @@ body, ul{
     }
     
     #menu{
+        display: none;
+    }
+
+    #menu-mobile{
+        display: none;
         flex-direction: column;
         list-style: none;
         text-align: center;
@@ -158,11 +175,6 @@ body, ul{
         height: 100%;
         display: flex;
         align-items: center;
-    }
-    
-    #checkbox-menu{
-        position: absolute;
-        opacity: 0;
     }
 
     label{
