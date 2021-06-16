@@ -121,9 +121,8 @@ body, ul{
         display:none;
     }
     #logomob{
-        display: flex;
+        display: block;
         max-width: 70vw;
-        opacity: 1;
         z-index: 3;
     }
     
@@ -157,16 +156,16 @@ body, ul{
         grid-row: 6;
         background: #fbad18;
         padding-top: 4vh;
-        gap: 5vh;
+        gap: 10vh;
     }
     
     .naviten{
         margin: auto;
         margin-top: 10vh;
-        margin-bottom: auto;
+        margin-bottom: 20vh;
         color: #060644;
         text-decoration: none;
-        padding: .8em;
+
     }
 
     .container{
