@@ -166,6 +166,9 @@ body, ul{
     }
     
     .naviten{
+        margin: 10px;
+        margin-top: 10vh;
+        margin-bottom: 20vh;
         color: #060644;
         text-decoration: none;
     }
@@ -199,6 +202,7 @@ body, ul{
     }
 
     .container h3{
+        display: block;
         margin-top: 3vh;
         margin-right: 3vw;
         color: #060644;
