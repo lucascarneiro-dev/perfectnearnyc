@@ -109,7 +109,9 @@ body, ul{
     display: none;
 }
 
-
+.container h3{
+    display: none;
+}
 
 /* MOBILE */
 
