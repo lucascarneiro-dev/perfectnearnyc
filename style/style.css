@@ -132,6 +132,7 @@ body, ul{
         margin: 0;
         margin-left: 2vw;
     }
+
     
     nav{
         margin-top: 0;
@@ -203,8 +204,8 @@ body, ul{
 
     .container h3{
         display: block;
-        margin-top: 3vh;
-        margin-right: 3vw;
+        margin-top: 2vh;
+        margin-right: 4vw;
         color: #060644;
     }
     label span:nth-child(1){
