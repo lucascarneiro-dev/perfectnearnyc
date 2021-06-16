@@ -14,14 +14,16 @@
         <header>
             <img id="logo" src="img/logo.png" alt="logo" title="Logo">
             <img id="logomob" src="img/logo.png" alt="logo" title="Logo">
+            <div class="container">
+                <h3>Menu</h3>
+                <input type="checkbox" id="checkbox-menu">
+                <label for="checkbox-menu" onclick="toggleMenu()" >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
             <nav> 
-                <div class="container">
-                    <label onclick="toggleMenu(), toggleLogo()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
-                </div>
                 <ul id="menu">
                     <li><a href="#home" class="naviten">Home</a></li>
                     <li><a href="#accommodations" class="naviten">Accommodations</a></li>
