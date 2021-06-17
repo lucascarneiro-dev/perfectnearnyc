@@ -15,7 +15,6 @@
             <img id="logo" src="img/logo.png" alt="logo" title="Logo">
             <img id="logomob" src="img/logo.png" alt="logo" title="Logo">
             <div class="container">
-                <h3>Menu</h3>
                 <input type="checkbox" id="checkbox-menu">
                 <label for="checkbox-menu" onclick="toggleMenu()" >
                     <span></span>
@@ -30,12 +29,6 @@
                     <li><a href="#policies" class="naviten">Rules and Policies</a></li>
                     <li><a href="#contact" class="naviten">Contact Us</a></li>
                 </ul>
-                <ul id="menumob">
-                    <li><a href="#home" class="naviten">Home</a></li>
-                    <li><a href="#accommodations" class="naviten">Accommodations</a></li>
-                    <li><a href="#policies" class="naviten">Rules and Policies</a></li>
-                    <li><a href="#contact" class="naviten">Contact Us</a></li>
-                </ul>
             </nav>
         </header>
     </div>
@@ -43,6 +36,13 @@
     <div id="home">
         <div id="arrival-box">
             <h2 class='arrival'>Perfect near NYC</h2>
+            <form action="">
+                <label style="margin-left: 3.5vw;" for="checkin">Arrival date</label>
+                <label style="margin-left: 4vw;" for="checkin">Departure date</label><br>
+                <input type="date" name="arrival" id="checkin" value="Arrival">
+                <input type="date" name="departure" id="checkout">
+                <button id="checkinbutton"> Schedule</button>
+            </form>
         </div>
         <video autoplay muted loop id="videobg"><source src="video/homebg.mp4" type="video/mp4">
         </video>
@@ -51,9 +51,31 @@
     </div>
 
     <div id="accommodations">
+        <div id="galeriacontainer">
+            
+        </div>
 
+        <div id="accommodationscontainer">
 
+        </div>
     </div>
+
+    <div id="policies">
+        <div id="rules">
+            
+        </div>
+    </div>
+
+    <div id="contact">
+        <div id="contacts">
+
+        </div>
+        <div id="map">
+
+        </div>
+        
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>

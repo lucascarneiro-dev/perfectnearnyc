@@ -1,11 +1,11 @@
 
 function toggleMenu() {
-    var menumob = document.getElementById("menumob");
-    var style = menumob.style.display;
-    if (style != "block") {
-      menumob.style.display = "block";
+    var menu = document.getElementById("menu");
+    var style = menu.style.display;
+    if (style != "flex") {
+      menu.style.display = "flex";
     } else {
-      menumob.style.display = "none";
+      menu.style.display = "none";
     }
     
   } 
