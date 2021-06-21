@@ -1,5 +1,4 @@
-
-header{
+header {
     display: grid;
     position: fixed;
     z-index: 3;
@@ -7,7 +6,7 @@ header{
     grid-template-columns: .2fr 1fr 1fr 1fr 1fr;
 }
 
-nav{
+nav {
     margin-top: 6vh;
     height: 15vh;
     position: fixed;
@@ -18,7 +17,7 @@ nav{
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-#menu{
+#menu {
     display: flex;
     list-style: none;
     grid-column: 3/6;
@@ -27,17 +26,17 @@ nav{
 
 
 
-.naviten{
+.naviten {
     color: #060644;
     text-decoration: none;
     padding: .8em;
 }
 
-.naviten:hover{
-    color: rgba(0,0,0,100);
+.naviten:hover {
+    color: rgba(0, 0, 0, 100);
 }
 
-#logo{
+#logo {
     display: flex;
     max-width: 18vw;
     grid-column: 2;
@@ -45,15 +44,15 @@ nav{
     z-index: 3;
 }
 
-#home{
-    display:grid;
+#home {
+    display: grid;
     grid-template-rows: 1fr 0.8fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100vw;
     margin: 0;
 }
 
-#videobg{
+#videobg {
     width: 100vw;
     height: auto;
     margin: 0 auto;
@@ -70,34 +69,40 @@ nav{
     border-radius: 2vw;
     height: 30vh;
 }
-#checkoutdiv{
-    margin-left: 5vw;
-    width: 10vw;
-    height: 4vh;
+
+.checkoutdiv {
+    margin-left: 4vw;
     font-size: 1.1rem;
+    position: relative;
+    float: left;
+    width: 12vw;
+    height: 10vh;
 }
-#checkindiv{
+
+.checkindiv {
     margin-left: 3.5vw;
+    font-size: 1.1rem;
+    position: relative;
+    float: left;
+    width: 12vw;
+    height: 10vh;
+}
+
+#checkin {
+    /* margin-left: 3.5vw; */
     width: 10vw;
     height: 4vh;
     font-size: 1.1rem;
 }
 
-#checkin{
-    margin-left: 3.5vw;
+#checkout {
+    /* margin-left: 5vw; */
     width: 10vw;
     height: 4vh;
     font-size: 1.1rem;
 }
 
-#checkout{
-    margin-left: 5vw;
-    width: 10vw;
-    height: 4vh;
-    font-size: 1.1rem;
-}
-
-#checkinbutton{
+#checkinbutton {
     margin-left: 3.5vw;
     width: 26.5vw;
     height: 5vh;
@@ -106,26 +111,28 @@ nav{
     font-size: 1.8rem;
 }
 
-.arrival{
+.arrival {
     font-family: 'Josefin Sans', sans-serif;
     color: white;
     text-align: center;
     margin-top: 3vh;
     font-size: 1.8rem;
 }
-h2.arrival{
+
+h2.arrival {
     margin-top: 3vh;
     font-size: 1.8rem;
 }
 
-label.arrival{
+label.arrival {
     margin-top: 0;
     padding-top: 0;
     font-size: 1.4rem;
 }
 
-body, ul{
-    margin:0px;
+body,
+ul {
+    margin: 0px;
     padding: 0px;
     font-family: 'Sifonn Pro';
 }
@@ -135,18 +142,17 @@ body, ul{
     font-style: normal;
     font-weight: normal;
     src: local('Sifonn Pro'), url('SIFONN_PRO.woff') format('woff');
-    }
+}
 
-#accommodations{
-    display:grid;
+#accommodations {
+    display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;   
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     background-color: white;
     height: 100vh;
 }
 
-#galerycontainer
-{
+#galerycontainer {
     height: 50vh;
     width: 90vw;
     margin-left: 4vw;
@@ -154,8 +160,7 @@ body, ul{
     background-color: orangered;
 }
 
-#amenitiescontainer
-{
+#amenitiescontainer {
     height: 20vh;
     width: 80vw;
     margin-top: 1vh;
@@ -164,16 +169,15 @@ body, ul{
     background-color: red;
 }
 
-#policies{
-    display:grid;
+#policies {
+    display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;   
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     background-image: linear-gradient(to bottom, white, #060644);
     height: 100vh;
 }
 
-#rules
-{
+#rules {
     height: 50vh;
     width: 90vw;
     margin-left: 4vw;
@@ -181,23 +185,22 @@ body, ul{
     background-color: orangered;
 }
 
-#contact{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;   
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     background-color: #060644;
     height: 50vh;
 }
 
-#contacts{ 
+#contacts {
     grid-row: 1;
-    background-color: orangered;
+    /* background-color: orangered; */
     height: 50vh;
-    width: 20vw;
+    width: 40vw;
     margin-left: 8.7vw;
 }
 
-.contacts
-{
+.contacts {
     list-style: none;
     flex-direction: column;
     text-align: left;
@@ -205,15 +208,19 @@ body, ul{
     list-style: none;
 }
 
-.contacts a {
-   text-decoration: none;
-   list-style: none;
-   color: #fbad18;
+.contacts a,
+.contacts img {
+    text-decoration: none;
+    list-style: none;
+    color: #fbad18;
+    font-size: 5vh;
+    height: 6vh;
+    padding-top: 7vh;
+    padding-left: 10vh;
 }
 
 
-.map
-{
+.map {
     position: relative;
     height: 0;
     margin-top: 5vh;
@@ -222,38 +229,37 @@ body, ul{
     margin-bottom: 5vh;
 }
 
-.map iframe
-{
+.map iframe {
     height: 40vh;
     width: 40vw;
     border-radius: 20px;
 }
 
-#checkbox-menu{
+#checkbox-menu {
     display: none;
 }
 
-.container h3{
+.container h3 {
     display: none;
 }
 
 /* MOBILE */
 
 
-#videobgmob{
+#videobgmob {
     display: none;
 }
 
-@media (max-width: 700px){
-    #logo{
+@media (max-width: 700px) {
+    #logo {
         display: block;
         max-width: 60vw;
         z-index: 3;
         margin: 0;
         margin-left: 2vw;
     }
-    
-    nav{
+
+    nav {
         margin-top: 0;
         height: 20vh;
         position: fixed;
@@ -264,17 +270,17 @@ body, ul{
         grid-template-rows: 1fr;
     }
 
-    header{
+    header {
         position: fixed;
         z-index: 3;
         font-size: 8vw;
     }
-    
-    #menu{
+
+    #menu {
         display: none;
         list-style: none;
         grid-column: none;
-        grid-row:none;
+        grid-row: none;
         flex-direction: column;
         text-align: center;
         grid-column: 1/6;
@@ -284,14 +290,14 @@ body, ul{
         color: #060644;
         text-decoration: none;
     }
-    
-    .naviten{
+
+    .naviten {
         color: #060644;
         text-decoration: none;
         padding: 0;
     }
 
-    .container{
+    .container {
         position: flex;
         grid-column: 5;
         grid-row: 1;
@@ -299,7 +305,7 @@ body, ul{
         z-index: 5;
     }
 
-    label{
+    label {
         margin-top: 11vh;
         margin-right: 4vh;
         cursor: pointer;
@@ -309,7 +315,7 @@ body, ul{
         width: 100px;
     }
 
-    label span{
+    label span {
         position: absolute;
         display: block;
         height: 13px;
@@ -320,39 +326,44 @@ body, ul{
         margin-left: 2vw;
     }
 
-    .container h3{
+    .container h3 {
         display: block;
         margin-top: 2vh;
         margin-right: 4vw;
         color: #060644;
     }
-    label span:nth-child(1){
+
+    label span:nth-child(1) {
         top: -40px;
     }
-    label span:nth-child(2){
+
+    label span:nth-child(2) {
         top: -18px;
     }
-    label span:nth-child(3){
+
+    label span:nth-child(3) {
         top: 4px;
     }
 
-    #checkbox-menu:checked + label span:nth-child(1){
+    #checkbox-menu:checked+label span:nth-child(1) {
         transform: rotate(-45deg);
         top: -18px;
     }
-    #checkbox-menu:checked + label span:nth-child(2){
+
+    #checkbox-menu:checked+label span:nth-child(2) {
         opacity: 0;
     }
-    #checkbox-menu:checked + label span:nth-child(3){
+
+    #checkbox-menu:checked+label span:nth-child(3) {
         transform: rotate(+45deg);
         top: -18px;
     }
 
-    #videobg{
+    #videobg {
         display: none;
     }
 
-    #videobgmob{
+    #videobgmob {
         display: flex;
         width: 100%;
         margin: 0 auto;
@@ -361,13 +372,14 @@ body, ul{
         grid-row: 1/6
     }
 
-    #home{
-        display:grid;
+    #home {
+        display: grid;
         grid-template-rows: none;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         width: 100%;
         margin: 0;
     }
+
     #arrival-box {
         grid-column: 2/5;
         margin-top: 50vw;
@@ -376,6 +388,6 @@ body, ul{
         position: flex;
         border-radius: 2vw;
     }
-    
-    
+
+
 }
