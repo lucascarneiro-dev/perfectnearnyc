@@ -13,7 +13,6 @@
     <div>
         <header>
             <img id="logo" src="img/logo.png" alt="logo" title="Logo">
-            <img id="logomob" src="img/logo.png" alt="logo" title="Logo">
             <div class="container">
                 <input type="checkbox" id="checkbox-menu">
                 <label for="checkbox-menu" onclick="toggleMenu()" >
@@ -37,11 +36,15 @@
         <div id="arrival-box">
             <h2 class='arrival'>Perfect near NYC</h2>
             <form action="">
-                <label style="margin-left: 3.5vw;" for="checkin">Arrival date</label>
-                <label style="margin-left: 4vw;" for="checkin">Departure date</label><br>
-                <input type="date" name="arrival" id="checkin" value="Arrival">
+                <div id="checkindiv">
+                    <label class='arrival'style="margin-left: 3.5vw;" for="checkin">Arrival date</label>
+                    <input type="date" name="arrival" id="checkin" value="Arrival">
+                </div>
+                <div id="checkoutdiv">
+                <label class='arrival'style="margin-left: 7.3vw;" for="checkin">Departure date</label>
                 <input type="date" name="departure" id="checkout">
-                <button id="checkinbutton"> Schedule</button>
+                </div>  
+                <button id="checkinbutton">BOOK NOW</button>
             </form>
         </div>
         <video autoplay muted loop id="videobg"><source src="video/homebg.mp4" type="video/mp4">
@@ -51,11 +54,15 @@
     </div>
 
     <div id="accommodations">
-        <div id="galeriacontainer">
-            
+        <div id="galerycontainer">
+            <button class="carousel__button previous" id="previous"></button>
+            <div class="galeryimages">
+                
+            </div>
+            <button class="carousel__button next" id="next"></button>
         </div>
 
-        <div id="accommodationscontainer">
+        <div id="amenitiescontainer">
 
         </div>
     </div>
@@ -68,10 +75,14 @@
 
     <div id="contact">
         <div id="contacts">
-
+            <ul class="contacts">
+                <li><a href="tel:+12017377489"><img src="img/phone.png" style="width: 3vw;">+1 (201) 737-7489</a></li>
+                <li><a href="http://www.instagram.com/perfectnearnyc/" target="_blank"><img src="img/insta.png" style="width: 3vw;">Instagram</a></li>
+                <li><a href="sms:+12017377489" target="_blank"><img src="img/sms.png" style="width: 3vw;">Send SMS</a></li>
+            </ul>
         </div>
-        <div id="map">
-
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3010.238468467458!2d-74.14999112898816!3d40.73152325484584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2538cdf40ffff%3A0xdc3c46d2765f6a68!2sPerfect%20near%20nyc!5e1!3m2!1sen!2sbr!4v1624290819525!5m2!1sen!2sbr"></iframe>
         </div>
         
     </div>
