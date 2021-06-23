@@ -24,8 +24,6 @@ nav {
     grid-row: 2/2;
 }
 
-
-
 .naviten {
     color: #060644;
     text-decoration: none;
@@ -35,6 +33,8 @@ nav {
 .naviten:hover {
     color: rgba(0, 0, 0, 100);
 }
+
+
 
 #logo {
     display: flex;
@@ -147,17 +147,101 @@ ul {
 #accommodations {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     background-color: white;
     height: 100vh;
 }
 
-#galerycontainer {
-    height: 50vh;
+.carousel{
+    padding-top: 30vh;
     width: 90vw;
-    margin-left: 4vw;
-    grid-row: 3;
-    background-color: orangered;
+    margin: 0 auto;
+}
+.slick-slide {
+    margin: 0 10px;
+}
+.slick-list {
+    margin: 0 -10px;
+}
+
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: #333333;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
 }
 
 #amenitiescontainer {
@@ -194,7 +278,6 @@ ul {
 
 #contacts {
     grid-row: 1;
-    /* background-color: orangered; */
     height: 50vh;
     width: 40vw;
     margin-left: 8.7vw;
@@ -286,15 +369,18 @@ ul {
         grid-column: 1/6;
         grid-row: 6;
         background: #fbad18;
-        padding-top: 35vh;
+        padding-top: 28vh;
         color: #060644;
         text-decoration: none;
+    }
+
+    #menu li{
+        padding-top: 2vh;
     }
 
     .naviten {
         color: #060644;
         text-decoration: none;
-        padding: 0;
     }
 
     .container {

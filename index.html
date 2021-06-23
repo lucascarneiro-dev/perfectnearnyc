@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
     <title>Perfect Near NYC</title>
 </head>
+
 <body style="margin: 0px;">
     <div>
         <header>
             <img id="logo" src="img/logo.png" alt="logo" title="Logo">
             <div class="container">
                 <input type="checkbox" id="checkbox-menu">
-                <label for="checkbox-menu" onclick="toggleMenu()" >
+                <label for="checkbox-menu" onclick="toggleMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
                 </label>
             </div>
-            <nav> 
+            <nav>
                 <ul id="menu" class="naviten">
                     <li><a href="#home" class="naviten">Home</a></li>
                     <li><a href="#accommodations" class="naviten">Accommodations</a></li>
@@ -31,7 +34,7 @@
             </nav>
         </header>
     </div>
-    
+
     <div id="home">
         <div id="arrival-box">
             <h2 class='arrival'>Perfect near NYC</h2>
@@ -43,23 +46,35 @@
                 <div class="checkoutdiv">
                     <label class='arrival' for="checkin">Departure date</label>
                     <input type="date" name="departure" id="checkout">
-                </div>  
+                </div>
                 <button id="checkinbutton">BOOK NOW</button>
             </form>
         </div>
-        <video autoplay muted loop id="videobg"><source src="video/homebg.mp4" type="video/mp4">
+        <video autoplay muted loop id="videobg">
+            <source src="video/homebg.mp4" type="video/mp4">
         </video>
-        <video autoplay muted loop id="videobgmob"><source src="video/homebgmobile.mp4" type="video/mp4">
+        <video autoplay muted loop id="videobgmob">
+            <source src="video/homebgmobile.mp4" type="video/mp4">
         </video>
     </div>
 
     <div id="accommodations">
-        <div id="galerycontainer">
-            <button class="carousel__button previous" id="previous"></button>
-            <div class="galeryimages">
-                
-            </div>
-            <button class="carousel__button next" id="next"></button>
+        <div class="carousel">
+            <img src="img/carousel/01.jpg" alt="">
+            <img src="img/carousel/02.jpg" alt="">
+            <img src="img/carousel/03.jpg" alt="">
+            <img src="img/carousel/04.jpg" alt="">
+            <img src="img/carousel/05.jpg" alt="">
+            <img src="img/carousel/06.jpg" alt="">
+            <img src="img/carousel/07.jpg" alt="">
+            <img src="img/carousel/08.jpg" alt="">
+            <img src="img/carousel/09.jpg" alt="">
+            <img src="img/carousel/10.jpg" alt="">
+            <img src="img/carousel/11.jpg" alt="">
+            <img src="img/carousel/12.jpg" alt="">
+            <img src="img/carousel/13.jpg" alt="">
+            <img src="img/carousel/14.jpg" alt="">
+
         </div>
 
         <div id="amenitiescontainer">
@@ -69,7 +84,7 @@
 
     <div id="policies">
         <div id="rules">
-            
+
         </div>
     </div>
 
@@ -77,16 +92,22 @@
         <div id="contacts">
             <ul class="contacts">
                 <li><a href="tel:+12017377489"><img src="img/phone.png">+1 (201) 737-7489</a></li>
-                <li><a href="http://www.instagram.com/perfectnearnyc/" target="_blank"><img src="img/insta.png">Instagram</a></li>
-                <li><a href="sms:+12017377489" target="_blank"><img src="img/sms.png" >Send SMS</a></li>
+                <li><a href="http://www.instagram.com/perfectnearnyc/" target="_blank"><img
+                            src="img/insta.png">Instagram</a></li>
+                <li><a href="sms:+12017377489" target="_blank"><img src="img/sms.png">Send SMS</a></li>
             </ul>
         </div>
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3010.238468467458!2d-74.14999112898816!3d40.73152325484584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2538cdf40ffff%3A0xdc3c46d2765f6a68!2sPerfect%20near%20nyc!5e1!3m2!1sen!2sbr!4v1624290819525!5m2!1sen!2sbr"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3010.238468467458!2d-74.14999112898816!3d40.73152325484584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2538cdf40ffff%3A0xdc3c46d2765f6a68!2sPerfect%20near%20nyc!5e1!3m2!1sen!2sbr!4v1624290819525!5m2!1sen!2sbr"></iframe>
         </div>
-        
+
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
