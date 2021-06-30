@@ -1,4 +1,6 @@
 
+document.getElementById('videobgmob').play();
+
 function toggleMenu() {
   var menu = document.getElementById("menu");
   var style = menu.style.display;
