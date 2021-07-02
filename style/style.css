@@ -53,7 +53,7 @@ nav {
 }
 
 #videobg {
-    width: 100vw;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     z-index: -1;
