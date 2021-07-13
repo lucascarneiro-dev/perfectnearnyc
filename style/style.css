@@ -513,7 +513,7 @@ ul {
         width: 90vw;
         margin-left: 4vw;
         grid-row: 3;
-        background-color: orangered;
+        background-color: none;
     }
 
     #contact {
