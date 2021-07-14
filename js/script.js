@@ -19,7 +19,7 @@ $('.carousel').slick({
   arrows: true,
   slidesToShow: 3,
   slidesToScroll: 1,
-  adaptiveHeight: true,
+  adaptiveHeight: false,
   autoplay: true,
   autoplaySpeed: 2000,
   nextArrow: '<i class="fs fa-arrow-circle-right slick-next"><img src="img/carousel/right-arrow.png" style="height: 5vh"></i>',

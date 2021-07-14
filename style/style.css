@@ -146,16 +146,15 @@ ul {
 }
 
 #accommodations {
-    display: grid;
     background-color: white;
 }
 
 .carousel{
-    padding-top: 30vh;
+    padding-top: 20vh;
     width: 90vw;
     margin: 0 auto;
-    margin-bottom: 10vh;
 }
+
 .slick-slide {
     margin: 0 10px;
 }
@@ -250,9 +249,8 @@ ul {
     width: 80vw;
     margin-top: 1vh;
     margin-left: 9vw;
-    grid-row: 4;
     align-content: center;
-    margin-bottom: 5vh;
+    margin-bottom: 15vh;
 }
 
 .amenities img{
@@ -268,6 +266,7 @@ ul {
     background-image: linear-gradient(to bottom, white, #060644);
     /* height: 100vh; */
     flex-wrap: wrap;
+    padding-bottom: 20vh;
 }
 
 
