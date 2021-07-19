@@ -62,8 +62,8 @@ $('.amenities').slick({
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 4
+        centerPadding: '20px',
+        slidesToShow: 3
       }
     },
     {
@@ -71,10 +71,18 @@ $('.amenities').slick({
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '40px',
+        centerPadding: '20px',
         slidesToShow: 3
       }
     }
   ]
 });
+$('#policies').slick({
+  infinite: false,
+  dots: false,
+  arrows: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  adaptiveHeight: true,
+  });
 }

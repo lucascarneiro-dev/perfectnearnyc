@@ -147,6 +147,8 @@ ul {
 
 #accommodations {
     background-color: white;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .carousel{
@@ -246,9 +248,9 @@ ul {
 .amenities {
     display: flex;
     height: 20vh;
-    width: 80vw;
+    width: 100%;
     margin-top: 1vh;
-    margin-left: 9vw;
+    margin: 0 auto;
     align-content: center;
     margin-bottom: 15vh;
 }
@@ -261,20 +263,21 @@ ul {
 
 #policies {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: stretch;
     background-image: linear-gradient(to bottom, white, #060644);
     flex-wrap: wrap;
-    ;
     padding-bottom: 20vh;
 }
 
 
 #rules {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
-    height: auto;
+    align-items: center;
+    justify-content: space-evenly;
     width: 25vw;
-    height: 22vh;
     padding: .5rem 1.5rem 1rem 1.5rem;
     margin: 1rem 1rem 1rem 1rem;
     background-color: white;
@@ -282,7 +285,7 @@ ul {
     box-shadow: rgb(4, 41, 78) 0px 8px 24px;
 }
 #rules h3{
-    text-align: center;
+    justify-self: center;
 }
 #rules p{
     text-align: justify;
@@ -290,9 +293,7 @@ ul {
 
 #rules img{
     width: 5vw; 
-    position: absolute; 
-    top:5px;
-    right:20px;
+    height: 5vw;
 }
 
 #contact {
@@ -448,6 +449,43 @@ ul {
         margin-left: 2vw;
     }
 
+    #policies {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: stretch;
+        background-image: linear-gradient(to bottom, white, #060644);
+        flex-wrap: wrap;
+        padding-bottom: 20vh;
+    }
+    
+    
+    #rules {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 30vw;
+        padding: .5rem 1.5rem 1rem 1.5rem;
+        margin: 1rem 1rem 1rem 1rem;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: rgb(4, 41, 78) 0px 8px 24px;
+    }
+    #rules h3{
+        justify-self: center;
+        text-align: center;
+    }
+    #rules p{
+        display: none;
+        text-align: justify;
+    }
+    
+    #rules img{
+        width: 20vw; 
+        height: 20vw;
+    }
+
     .container h3 {
         display: block;
         margin-top: 2vh;
@@ -517,42 +555,6 @@ ul {
         height: auto;
     }
 
-    #policies {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: linear-gradient(to bottom, white, #060644);
-        flex-wrap: wrap;
-        padding-bottom: 20vh;
-    }
-    
-    #rules {
-        position: relative;
-        height: auto;
-        width: 25vw;
-        height: 22vh;
-        padding: .5rem 1.5rem 1rem 1.5rem;
-        margin: 1rem 1rem 1rem 1rem;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: rgb(4, 41, 78) 0px 8px 24px;
-    }
-
-    #rules h3{
-        text-align: center;
-    }
-
-    #rules p{
-        text-align: justify;
-    }
-    
-    #rules img{
-        width: 5vw; 
-        position: absolute; 
-        top:5px;
-        right:20px;
-    }
-
     #contact {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -604,6 +606,23 @@ ul {
         height: 40vh;
         width: 70vw;
         border-radius: 20px;
+    }
+
+    /* OVERLAY */
+
+    /* .rulesOverlay {
+        background-color: #060644;
+        opacity: 0.7;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top:0;
+    } */
+
+    .modal{
+        background-color: white;
+        width: 90%;
+        height: 90%;
     }
 
 }
