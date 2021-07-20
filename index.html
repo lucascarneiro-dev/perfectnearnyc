@@ -84,33 +84,33 @@
     </div>
 
     <section id="policies">
-        <div id="rules">
+        <div onclick="displayRule('rule00')" id="rules">
             <h3>Silence</h3><img src="img/rule00.png" alt="Silence rule">
             <p>Silence is guaranteed between 22:00 and 8:00, we have noise sensors to ensure compliance with the
                 standard.</p>
         </div>
-        <div id="rules">
+        <div onclick="displayRule('rule04')" id="rules">
             <h3>No smoking </h3><img src="img/rule04.png" alt="Don't smoke">
             <p>Prohibited smoke inside or in front of the property.</p>
         </div>
-        <div id="rules">
+        <div onclick="displayRule('rule01')" id="rules">
             <h3>Security standards</h3><img src="img/rule01.png" alt="Security Rules">
             <p>It is prohibited for visitors to enter the property.
                 <br> Forbidden to leave the property door unlocked.
             </p>
         </div>
-        <div id="rules">
+        <div onclick="displayRule('rule05')" id="rules">
             <h3>Kitchen rules</h3><img src="img/rule05.png" alt="Kitchen Rules">
             <p>The kitchen must always be kept clean after use by the user.
                 <br>It is forbidden to eat or store food inside the bedrooms.
             </p>
         </div>
-        <div id="rules">
+        <div onclick="displayRule('rule02')" id="rules">
             <h3>Safety standards</h3><img src="img/rule02.png" alt="No alcohol or drugs">
             <p>
                 <br> Prohibited to store or ingest alcohol or illegal drugs in the property.</p>
         </div>
-        <div id="rules">
+        <div onclick="displayRule('rule03')" id="rules">
             <h3>Common use rules</h3><img src="img/rule03.png" alt="Cleaning sign">
             <p>Leave belongings on the floor is prohibided.
                 <br>It is prohibited personal objects inside the bathroom and the guest must dress appropriately at
@@ -135,11 +135,57 @@
 
     </div>
 
-    <div class="rulesOverlay">
-        <div class="modal">
-            
+    <div id="rulesOverlay">
+        <div id="rule00">
+            <h3>Silence</h3><img class="ruleMobImg" src="img/rule00.png" alt="Silence rule">
+            <div onclick="displayRule('rule00')" id="close" >
+                X
+            </div>
+            <p>Silence is guaranteed between 22:00 and 8:00, we have noise sensors to ensure compliance with the
+                standard.</p>            
         </div>
-
+        <div id="rule04">
+            <h3>No smoking </h3><img class="ruleMobImg" src="img/rule04.png" alt="Don't smoke">
+            <div onclick="displayRule('rule04')" id="close" >
+                X
+            </div>
+            <p>Prohibited smoke inside or in front of the property.</p>            
+        </div>
+        <div id="rule01">
+            <h3>Security standards</h3><img class="ruleMobImg" src="img/rule01.png" alt="Security Rules">
+            <div onclick="displayRule('rule01')" id="close" >
+                X
+            </div>
+            <p>It is prohibited for visitors to enter the property.
+                <br> Forbidden to leave the property door unlocked.
+            </p>            
+        </div>
+        <div id="rule05">
+            <h3>Kitchen rules</h3><img class="ruleMobImg" src="img/rule05.png" alt="Kitchen Rules">
+            <div onclick="displayRule('rule05')" id="close" >
+                X
+            </div>
+            <p>The kitchen must always be kept clean after use by the user.
+                <br>It is forbidden to eat or store food inside the bedrooms.
+            </p>            
+        </div>
+        <div id="rule02">
+            <h3>Safety standards</h3><img class="ruleMobImg" src="img/rule02.png" alt="No alcohol or drugs">
+            <div onclick="displayRule('rule02')" id="close" >
+                X
+            </div>
+            <p><br> Prohibited to store or ingest alcohol or illegal drugs in the property.</p>            
+        </div>
+        <div id="rule03">
+            <h3>Common use rules</h3><img class="ruleMobImg" src="img/rule03.png" alt="Cleaning sign">
+            <div onclick="displayRule('rule03')" id="close" >
+                X
+            </div>
+            <p>Leave belongings on the floor is prohibided.
+                <br>It is prohibited personal objects inside the bathroom and the guest must dress appropriately at
+                common areas.
+            </p>            
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
