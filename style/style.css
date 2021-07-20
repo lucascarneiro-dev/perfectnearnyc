@@ -285,16 +285,21 @@ ul {
     box-shadow: rgb(4, 41, 78) 0px 8px 24px;
     text-align: justify;
 }
-#rules h3{
+#rules h2{
     justify-self: center;
 }
 #rules p{
-    text-align: justify;
+    text-align: center;
+    font-size: 25px;
 }
 
 #rules img{
     width: 5vw; 
     height: 5vw;
+}
+
+#rulesOverlay{
+    display:none;
 }
 
 #contact {
@@ -473,9 +478,10 @@ ul {
         border-radius: 10px;
         box-shadow: rgb(4, 41, 78) 0px 8px 24px;
     }
-    #rules h3{
+    #rules h2{
         justify-self: center;
         text-align: center;
+        font-size: 120%;
     }
     #rules p{
         display: none;
@@ -620,8 +626,9 @@ ul {
         top:0;
         justify-content: space-evenly;
         align-items: stretch;
+        align-content: center;
         flex-wrap: wrap;
-
+        z-index: 5;
     }
 
     .ruleMobImg{
@@ -650,7 +657,7 @@ ul {
     #rule00{
         background-color: white;
         width: 80%;
-        height: 60%;
+        height: 75%;
         display: none;
         flex-wrap: wrap;
         position: relative;
@@ -659,10 +666,9 @@ ul {
         background-color: white;
         border-radius: 10px;
         box-shadow: rgb(4, 41, 78) 0px 8px 24px;
-        text-align: justify;
-        margin-top: 30vh;
+        text-align: center;
         padding: 0 5vw 0 5vw;
-        font-size: 25px;
+        font-size: 160%;
         text-align: center;
     }
 
@@ -670,7 +676,7 @@ ul {
     #rule01{
         background-color: white;
         width: 80%;
-        height: 60%;
+        height: 75%;
         display: none;
         flex-wrap: wrap;
         position: relative;
@@ -680,15 +686,14 @@ ul {
         border-radius: 10px;
         box-shadow: rgb(4, 41, 78) 0px 8px 24px;
         text-align: justify;
-        margin-top: 30vh;
         padding: 0 5vw 0 5vw;
-        font-size: 25px;
+        font-size: 160%;
         text-align: center;
     }
     #rule02{
         background-color: white;
         width: 80%;
-        height: 60%;
+        height: 75%;
         display: none;
         flex-wrap: wrap;
         position: relative;
@@ -698,15 +703,14 @@ ul {
         border-radius: 10px;
         box-shadow: rgb(4, 41, 78) 0px 8px 24px;
         text-align: justify;
-        margin-top: 30vh;
         padding: 0 5vw 0 5vw;
-        font-size: 25px;
+        font-size: 160%;
         text-align: center;
     }
     #rule03{
         background-color: white;
         width: 80%;
-        height: 60%;
+        height: 75%;
         display: none;
         flex-wrap: wrap;
         position: relative;
@@ -716,15 +720,14 @@ ul {
         border-radius: 10px;
         box-shadow: rgb(4, 41, 78) 0px 8px 24px;
         text-align: justify;
-        margin-top: 30vh;
         padding: 0 5vw 0 5vw;
-        font-size: 20px;
+        font-size: 160%;
         text-align: center;
     }
     #rule04{
         background-color: white;
         width: 80%;
-        height: 60%;
+        height: 75%;
         display: none;
         flex-wrap: wrap;
         position: relative;
@@ -734,15 +737,14 @@ ul {
         border-radius: 10px;
         box-shadow: rgb(4, 41, 78) 0px 8px 24px;
         text-align: justify;
-        margin-top: 30vh;
         padding: 0 5vw 0 5vw;
-        font-size: 25px;
+        font-size: 160%;
         text-align: center;
     }
     #rule05{
         background-color: white;
         width: 80%;
-        height: 60%;
+        height: 75%;
         display: none;
         flex-wrap: wrap;
         position: relative;
@@ -752,9 +754,8 @@ ul {
         border-radius: 10px;
         box-shadow: rgb(4, 41, 78) 0px 8px 24px;
         text-align: justify;
-        margin-top: 30vh;
         padding: 0 5vw 0 5vw;
-        font-size: 25px;
+        font-size: 160%;
         text-align: center;
     }
 
