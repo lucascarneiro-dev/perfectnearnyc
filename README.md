@@ -1,2 +1,2 @@
 # perfectnearnyc
-Website of company Perfect Near NYC
+Website of the company Perfect Near NYC
