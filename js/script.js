@@ -29,16 +29,17 @@ function appendImgsCarousel(Id) {
   var carouselElement = document.getElementById(Id);
   var index = 1
   while (true) {
-    var URL = `${window.location.host}/img/carousel/${index}.jpg`;
+    var URL = `${window.location.hostname}/img/carousel/${index}.jpg`;
     $.get(URL)
       .done(function () {
-        alert(URL)
+        alert("Deu bom")
         var image = document.createElement("img");
         image.setAttribute("src", `img/carousel/${index}.jpg`);
-        carouselElement.appendChild(image)
+        document.getElementById(Id).appendChild(image)
       })
       .fail(function () {
         var end = true;
+        alert("Falhou")
       })
 
     index += 1;
