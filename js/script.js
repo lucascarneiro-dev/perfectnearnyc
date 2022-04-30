@@ -1,3 +1,4 @@
+window.onload = appendImgsCarousel(accomodationsImg)
 document.getElementById('videobgmob').play();
 
 function toggleMenu() {
@@ -16,11 +17,34 @@ function displayRule(ruleid) {
     if (document.getElementById(ruleid).style.display != "flex") {
       document.getElementById("rulesOverlay").style.display = "flex";
       document.getElementById(ruleid).style.display = "flex";
-    } 
+    }
     else {
       document.getElementById("rulesOverlay").style.display = "none";
       document.getElementById(ruleid).style.display = "none";
     }
+  }
+}
+
+function appendImgsCarousel(Id) {
+  var carouselElement = document.getElementById(Id);
+  var index = 1
+  while (true) {
+    var URL = `${window.location.host}/img/carousel/${index}.jpg`;
+    $.get(URL)
+      .done(function () {
+        alert(URL)
+        console.log(URL)
+        var image = document.createElement("img");
+        image.setAttribute("src", `img/carousel/${index}.jpg`);
+        carouselElement.appendChild(image)
+      })
+      .fail(function () {
+        var end = true;
+      })
+      alert(URL)
+
+    index += 1;
+    if (end) { break }
   }
 }
 
@@ -36,23 +60,23 @@ $('.carousel').slick({
   nextArrow: '<i class="fs fa-arrow-circle-right slick-next"><img src="img/carousel/right-arrow.png" style="height: 5vh"></i>',
   prevArrow: '<i class="fas fa-arrow-circle-left slick-prev"><img src="img/carousel/left-arrow.png" style="height: 5vh"></i>',
   responsive: [{
-      breakpoint: 770,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
+    breakpoint: 770,
+    settings: {
+      arrows: false,
+      centerMode: true,
+      centerPadding: '40px',
+      slidesToShow: 2
     }
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      arrows: false,
+      centerMode: true,
+      centerPadding: '40px',
+      slidesToShow: 1
+    }
+  }
   ]
 });
 x = window.screen.width
@@ -67,23 +91,23 @@ if (x < 800) {
     nextArrow: '<i class="fs fa-arrow-circle-right slick-next"><img src="img/carousel/right-arrow.png" style="height: 5vh"></i>',
     prevArrow: '<i class="fas fa-arrow-circle-left slick-prev"><img src="img/carousel/left-arrow.png" style="height: 5vh"></i>',
     responsive: [{
-        breakpoint: 770,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '20px',
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '20px',
-          slidesToShow: 3
-        }
+      breakpoint: 770,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '20px',
+        slidesToShow: 3
       }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '20px',
+        slidesToShow: 3
+      }
+    }
     ]
   });
   $('#policies').slick({
