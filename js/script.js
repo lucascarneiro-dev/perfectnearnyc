@@ -33,7 +33,6 @@ function appendImgsCarousel(Id) {
     $.get(URL)
       .done(function () {
         alert(URL)
-        console.log(URL)
         var image = document.createElement("img");
         image.setAttribute("src", `img/carousel/${index}.jpg`);
         carouselElement.appendChild(image)
@@ -41,7 +40,6 @@ function appendImgsCarousel(Id) {
       .fail(function () {
         var end = true;
       })
-      alert(URL)
 
     index += 1;
     if (end) { break }
