@@ -1,4 +1,4 @@
-window.onload = appendImgsCarousel(accomodationsImg)
+// window.onload = appendImgsCarousel(accomodationsImg)
 document.getElementById('videobgmob').play();
 
 function toggleMenu() {
@@ -26,27 +26,13 @@ function displayRule(ruleid) {
 }
 
 function appendImgsCarousel(Id) {
-  var carouselElement = document.getElementById(Id);
-  var index = 1
-  while (true) {
-    var URL = `${window.location.hostname}/img/carousel/${index}.jpg`;
-    $.get(URL)
-      .done(function () {
-        alert("Deu bom")
-        var image = document.createElement("img");
-        image.setAttribute("src", `img/carousel/${index}.jpg`);
-        document.getElementById(Id).appendChild(image)
-      })
-      .fail(function () {
-        var end = true;
-        alert("Falhou")
-      })
-
-    index += 1;
-    if (end) { break }
+  for (let index = 1; index < 25; index++) {
+    var URL = `/img/carousel/${index}.jpg`;
+    var image = document.createElement("img");
+    image.setAttribute("src", `img/carousel/${index}.jpg`);
+    document.getElementById(Id).appendChild(image);
   }
 }
-
 $('.carousel').slick({
   infinite: true,
   dots: false,
